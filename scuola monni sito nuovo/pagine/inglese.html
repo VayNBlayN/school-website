@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>materie - inglese</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>    
+    <header>
+        <nav>
+            <ul class="nav-ul">
+                <li class=""><a href="/index.html">Home</a></li>
+                <li class="materie-li"><a href="">Materie</a>
+                    <ul class="submenu">
+                        <li class=""><a href="">Italiano</a></li>
+                        <li class=""><a href="">Informatica</a></li>
+                        <li class=""><a href="">Inglese</a></li>
+                    </ul>
+                </li>
+                <li class=""><a href="">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main"> 
+        <main>
+            <div class="hero">
+                <h1>Scopri la bellezza della lingua Inglese</h1>
+            </div>
+            <div class="card-section">
+                <div class="card-one">
+                    <p>
+                        la lingua inglese è usata in tutto il mondo<br> e apre numerevoli strade altirmenti chiuse,<br> viene usata principalmente per comunicare tra<br> diverse culture, quasi come lingua universale
+                    </p>
+                </div>
+                <div class="card-two">
+                    
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
+<style>
+body {
+    font-family: sans-serif;
+    margin: 0%; 
+    color: white;
+    background-image: url(/img/sfondo-ing.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100vh;
+}
+
+nav {
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter:blur(5px) ;
+    width: 100%;
+    border-bottom: 1px solid white;
+    position: relative;
+    z-index: 10;        
+    overflow: visible; 
+}
+.nav-ul  {
+    display: inline-flex;
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+}
+.nav-ul  li {
+    margin: 10px;
+}
+.nav-ul li a:hover {
+    color: #a8a8a8;
+}
+.nav-ul  li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    transition: .2s ease;
+    justify-content: center;
+}
+.underline {
+    position: relative;
+    transition: 100ms;
+}
+.underline:hover::before {
+    content: '';
+    background: linear-gradient(to right, #7f7fe4, #3939e1);
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    border-radius: 100px;
+}
+
+.submenu {
+    z-index: 10;
+    display: none;
+    position: absolute;
+    top: 100%; /* subito sotto il li genitore */
+    left: 0%;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 6px;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    min-width: 150px;
+}
+.submenu li  {
+    padding: 5px 5px 5px 5px;
+}
+.submenu li a{
+    padding: 10px 20px 10px 20px;
+}
+
+.materie-li {
+    position: relative;
+}
+.materie-li:hover .submenu {
+    display: block;
+}
+.submenu li a:hover {
+    color: white;
+    border: 1px solid white;
+}
+
+
+.hero {
+    text-align: center;
+}
+.hero h1 {
+    font-size: 130px;
+    margin: 0%;
+    opacity: 0;
+    transform: translateY(20px);
+    text-shadow: 2px 2px 20px black;
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.5s; 
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-one {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+</style>
